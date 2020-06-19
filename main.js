@@ -173,45 +173,25 @@ for (let index = 1; index < sampleArray.length; index += 1) {
 
 // kata 14
 // Display the square of each element in sampleArray. (219961, 570025, …, 222784)
-// const kata14Heading = document.createElement('h3')
-// kata14Heading.append('KATA 14')
-// parentElement.append(kata14Heading)
-// for (let index = 0; index >= sampleArray.length; index -= 1) {
-//     const isSquare = Number.isInteger(Math.sqrt(index));
-//     console.log(sampleArray[index])
-//     if (sampleArray[index] = (sampleArray[index]) * (sampleArray[index])) {
-//         let kata14results = document.createElement('p')
-//         kata14results.append(sampleArray[index])
-//         kata14Heading.append(kata14results)
-//     }
-// }
+const kata14Heading = document.createElement('h3')
+kata14Heading.append('KATA 14')
+parentElement.append(kata14Heading)
+for (let index = 1; index <= sampleArray.length; index += 1) {
+    console.log(sampleArray[index])
+    const isSquare = Number.isInteger(Math.sqrt(sampleArray[index]))
+    if (isSquare) {
+        let kata14results = document.createElement('p')
+        kata14results.append(sampleArray[index])
+        kata14Heading.append(kata14results)
+    }
+}
+// kata 15
+// Display the sum of all the numbers from 1 to 20.
 
-        // for (let index = 0; index < sampleArray.length; index++)
-        //     arr[index] = arr[index] * arr[index]; {
-        //     let kata14results = document.createElement('p')
-        //     kata14results.append(sampleArray[index])
-        //     kata14Heading.append(kata14results)
-
-
-
-        // kata 15
-        // Display the sum of all the numbers from 1 to 20.
-    //     const kata15Heading = document.createElement('h3')
-    // kata15Heading.append('KATA 15')
-    // parentElement.append(kata13Heading)
-    // let sum = 0;
-    // for (index = 0; index < sampleArray.length; index = index + 1) {
-    //     sum = sum + sampleArray[index];
-    //     console.log = sum;
-    //     let kata15results = document.createElement('p')
-    //     kata15results.append(sampleArray[index])
-    //     kata15Heading.append(kata15results)
-    // }
 
 
 // kata 16
 // Display the sum of all the elements in sampleArray.
-
 
 // kata 17
 // Display the smallest element in sampleArray.
