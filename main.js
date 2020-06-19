@@ -176,25 +176,80 @@ for (let index = 1; index < sampleArray.length; index += 1) {
 const kata14Heading = document.createElement('h3')
 kata14Heading.append('KATA 14')
 parentElement.append(kata14Heading)
-for (let index = 1; index <= sampleArray.length; index += 1) {
-    console.log(sampleArray[index])
-    const isSquare = Number.isInteger(Math.sqrt(sampleArray[index]))
-    if (isSquare) {
-        let kata14results = document.createElement('p')
-        kata14results.append(sampleArray[index])
-        kata14Heading.append(kata14results)
-    }
+
+for (let index = 0; index < sampleArray.length; index += 1) {
+
+    let square = sampleArray[index] * sampleArray[index]
+
+    let kata14results = document.createElement('p')
+    kata14results.append(square)
+    kata14Heading.append(kata14results)
 }
+
+
 // kata 15
 // Display the sum of all the numbers from 1 to 20.
+const kata15Heading = document.createElement('h3')
+kata15Heading.append('KATA 15')
+parentElement.append(kata15Heading)
 
+for (let index = 0; index < sampleArray.length; index += 1) {
+    let sum = 0
+    let sum15 = sampleArray[index]
+    let innerArray = sum15.toString().split("")
+    for (let innerindex = 0; innerindex < innerArray.length; innerindex += 1) {
+        sum += Number(innerArray[innerindex])
+    }
+    let kata15results = document.createElement('p')
+    kata15results.append(sum)
+    kata15Heading.append(kata15results)
+}
 
 
 // kata 16
 // Display the sum of all the elements in sampleArray.
+const kata16Heading = document.createElement('h3')
+kata16Heading.append('KATA 16')
+parentElement.append(kata16Heading)
+
+let sum = 0
+for (let index = 0; index < sampleArray.length; index += 1) {
+    sum += sampleArray[index]
+}
+let kata16results = document.createElement('p')
+kata16results.append(sum)
+kata16Heading.append(kata16results)
+
 
 // kata 17
 // Display the smallest element in sampleArray.
+const kata17Heading = document.createElement('h3')
+kata17Heading.append('KATA 17')
+parentElement.append(kata17Heading)
+let smallest = sampleArray[0]
+for (let index = 0; index < sampleArray.length; index += 1) {
+    if (sampleArray[index] < smallest) {
+        smallest = sampleArray[index]
+        console.log(smallest)
+    }
+}
+let kata17results = document.createElement('p')
+kata17results.append(smallest)
+kata17Heading.append(kata17results)
 
 // kata 18
-// Display the largest element in sampleArray.
+// Display the largest element in sampleArray.const kata16Heading = document.createElement('h3')
+
+const kata18Heading = document.createElement('h3')
+kata18Heading.append('KATA 18')
+parentElement.append(kata18Heading)
+let largest = sampleArray[0]
+for (let index = 0; index < sampleArray.length; index += 1) {
+    if (sampleArray[index] > largest) {
+        largest = sampleArray[index]
+        console.log(largest)
+    }
+}
+let kata18results = document.createElement('p')
+kata18results.append(largest)
+kata18Heading.append(kata18results)
